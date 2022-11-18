@@ -25,11 +25,11 @@ const ProjectList = () => (
         }}
         category={
           <>
-            <Tags color={ColorTags.FUCHSIA}>Next.js</Tags>
-            <Tags color={ColorTags.LIME}>React</Tags>
-            <Tags color={ColorTags.SKY}>Django REST framework</Tags>
+            <Tags color={ColorTags.VIOLET}>React</Tags>
+            <Tags color={ColorTags.LIME}>Next.js</Tags>
+            <Tags color={ColorTags.SKY}>Django API</Tags>
             <Tags color={ColorTags.ROSE}>React-Bootstrap</Tags>
-            <Tags color={ColorTags.ROSE}>Headless CMS / Blog</Tags>
+            <Tags color={ColorTags.FUCHSIA}>Headless CMS</Tags>
           </>
         }
       />
@@ -44,8 +44,25 @@ const ProjectList = () => (
         category={
           <>
             <Tags color={ColorTags.VIOLET}>React</Tags>
-            <Tags color={ColorTags.EMERALD}>Django REST framework</Tags>
+            <Tags color={ColorTags.SKY}>Django REST API</Tags>
             <Tags color={ColorTags.YELLOW}>React-Bootstrap</Tags>
+          </>
+        }
+      />
+
+      <Project
+        name="Simple Fit API"
+        description="Fully Documented API for a fitness App"
+        link="https://github.com/ReOcelot/simplefit_api_github/"
+        img={{
+          src: 'https://res.cloudinary.com/dq1ktd5ge/image/upload/v1668727492/portfolio/github_logo_iylp6u.png',
+          alt: 'Github Logo',
+        }}
+        category={
+          <>
+            <Tags color={ColorTags.SKY}>Django REST framework</Tags>
+            <Tags color={ColorTags.YELLOW}>Software Architecture</Tags>
+            <Tags color={ColorTags.EMERALD}>Documentation</Tags>
           </>
         }
       />
