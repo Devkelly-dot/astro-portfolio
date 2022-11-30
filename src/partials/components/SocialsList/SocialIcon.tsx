@@ -7,7 +7,7 @@ interface Icon {
 }
 
 const SocialsIcon = (props: Icon) => (
-  <div className="mr-4 grayscale duration-200 hover:scale-110">
+  <div className="mr-4  grayscale duration-200 hover:scale-110">
     <a href={props.href} target="_blank">
       <img
         src={props.img_url}

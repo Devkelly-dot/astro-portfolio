@@ -1,6 +1,6 @@
 ---
 import { Footer } from '@/partials/Footer';
-import { Navbar } from '@/partials/Navbar';
+import { Navbar } from '@/partials/nav/Navbar';
 import { AppConfig } from '@/utils/AppConfig';
 
 export interface Props {
@@ -26,7 +26,7 @@ const {
     <link rel='alternate' type='application/rss+xml' href='/rss.xml' />
   </head>
   <body class='text-black'>
-      <Navbar />
+      <Navbar client:load/>
       <slot></slot>
       <div class = 'md:fixed md:bottom-0 md:w-full'><Footer /></div>
       <div class = 'mb-10'></div>
