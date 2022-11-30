@@ -5,14 +5,15 @@ import { NavItem } from './NavItem';
 const Navbar = () => {
   const [visNav, setVisNav] = useState(false);
   const [navClass, setNavClass] = useState({
-    leftHand: 'grid-cols-1 md:flex md:list-none md:flex-row md:gap-4',
+    leftHand:
+      'grid-cols-1 md:flex md:list-none md:flex-row md:gap-4 invisible md:visible h-0',
     rightHand:
-      'grid-cols-1 md:flex md:list-none md:flex-row md:gap-4 md:justify-self-end',
+      'grid-cols-1 md:flex md:list-none md:flex-row md:gap-4 md:justify-self-end invisible md:visible h-0',
   });
 
   function handleNav() {
     setVisNav(!visNav);
-    if (visNav) {
+    if (!visNav) {
       setNavClass({
         leftHand: 'grid-cols-1 md:flex md:list-none md:flex-row md:gap-4 ',
         rightHand:
@@ -21,9 +22,9 @@ const Navbar = () => {
     } else {
       setNavClass({
         leftHand:
-          'grid-cols-1 md:flex md:list-none md:flex-row md:gap-4 invisible md:visible',
+          'grid-cols-1 md:flex md:list-none md:flex-row md:gap-4 invisible md:visible h-0',
         rightHand:
-          'grid-cols-1 md:flex md:list-none md:flex-row md:gap-4 md:justify-self-end invisible md:visible',
+          'grid-cols-1 md:flex md:list-none md:flex-row md:gap-4 md:justify-self-end invisible md:visible h-0',
       });
     }
   }

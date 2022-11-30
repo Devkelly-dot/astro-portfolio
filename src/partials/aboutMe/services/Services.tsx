@@ -4,7 +4,11 @@ import { ServiceItem } from './ServiceItem';
 import { TechList } from './TechList';
 
 interface ServicesProps {
-  list: any;
+  list: {
+    title: string;
+    description: string;
+    content: string;
+  }[];
 }
 
 const Services = (props: ServicesProps) => {
@@ -13,17 +17,17 @@ const Services = (props: ServicesProps) => {
       <h1 className="mb-8 text-3xl font-bold">What I Do</h1>
       <ul className="px-10 md:px-0">
         {props.list ? (
-          props.list.map((item: any) => (
-            <li>
+          props.list.map((item) => (
+            <li key={item.title}>
               <ServiceItem
-                title={item.frontmatter.title}
-                description={item.frontmatter.description}
-                content={item.rawContent()}
+                title={item.title}
+                description={item.description}
+                content={item.content}
               />
             </li>
           ))
         ) : (
-          <div>I do nothingg</div>
+          <div>I do nothing</div>
         )}
       </ul>
       <div style={{ height: '1rem' }}></div>
