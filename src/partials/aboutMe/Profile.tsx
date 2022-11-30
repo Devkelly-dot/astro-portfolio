@@ -3,7 +3,7 @@ import React from 'react';
 const Profile = () => (
   <div>
     <img
-      className="mx-auto mb-4 w-64"
+      className="mx-auto mb-4 w-64 saturate-50"
       src="https://res.cloudinary.com/dq1ktd5ge/image/upload/v1669765799/portfolio/headshot_1_n3osrc.png"
       alt="Devin's Picture"
     ></img>

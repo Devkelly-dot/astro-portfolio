@@ -53,7 +53,7 @@ const Navbar = () => {
           ></path>
         </svg>
       </button>
-      <div className=" grid grid-cols-1 p-4 opacity-60 hover:bg-slate-100 hover:opacity-100  md:grid-cols-2 md:px-10">
+      <div className=" grid h-20 grid-cols-1 p-4 opacity-60 hover:bg-slate-100 hover:opacity-100  md:h-14 md:grid-cols-2 md:px-10">
         <ul className={navClass.leftHand}>
           <NavItem name="Home" href="/" target="" />
           <NavItem name="About" href="/about" target="" />
