@@ -1,19 +1,12 @@
-import { Section } from 'astro-boilerplate-components';
+import React from 'react';
+
+import { SocialsList } from './components/SocialsList/SocialsList';
 
 const Footer = () => (
-  <Section>
-    <hr class="my-4 h-px border-0 bg-gray-200 dark:bg-gray-700"></hr>
-    <div>
-      © Copyright 2022 by Devin Kelly -{' '}
-      <a
-        href="https://github.com/ixartz/Astro-boilerplate"
-        className="text-teal-400"
-        target="_blank"
-      >
-        Boilerplate by ixartz
-      </a>
-    </div>
-  </Section>
+  <div className="grid h-20 grid-cols-2 content-center px-10 ">
+    <div>© Copyright 2022 Devin Kelly</div>
+    <SocialsList />
+  </div>
 );
 
 export { Footer };

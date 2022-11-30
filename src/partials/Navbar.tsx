@@ -3,6 +3,7 @@ import {
   NavMenu,
   Section,
 } from 'astro-boilerplate-components';
+import React from 'react';
 
 const Navbar = () => (
   <Section>
