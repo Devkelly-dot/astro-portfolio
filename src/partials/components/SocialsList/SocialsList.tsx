@@ -3,7 +3,12 @@ import React from 'react';
 import { SocialsIcon } from './SocialIcon';
 
 const SocialsList = () => (
-  <div className="grid grid-cols-3 justify-self-end">
+  <div className="grid grid-cols-4 justify-self-end">
+    <SocialsIcon
+      img_url="https://res.cloudinary.com/dq1ktd5ge/image/upload/v1669884940/icons/gmail_ywvkuy.png"
+      name="devwebdev9622@gmail.com"
+      href="mailto: devwebdev9622@gmail.com"
+    />
     <SocialsIcon
       img_url="https://res.cloudinary.com/dq1ktd5ge/image/upload/v1668727381/portfolio/linkedINlogo_wnog8z.png"
       name="LinkedIn"
