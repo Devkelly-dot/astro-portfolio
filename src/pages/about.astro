@@ -1,33 +1,30 @@
 ---
-import Base from '@/templates/Base.astro';
 import { Profile } from '@/partials/aboutMe/Profile';
 import { Services } from '@/partials/aboutMe/services/Services';
+import Base from '@/templates/Base.astro';
 
-const { title } = {title:"About Me"};
-const { description } = {description: "About Devin Kelly"};
+const { title } = { title: 'About Me' };
+const { description } = { description: 'About Devin Kelly' };
 
-const allServices = await Astro.glob("../data/services/*.md")
-let propServices = []
+const allServices = await Astro.glob('../data/services/*.md');
+const propServices = [];
 
-for(let i in allServices)
-{
+for (let i in allServices) {
   const title = allServices[i]?.frontmatter.title;
   const description = allServices[i]?.frontmatter.description;
-  const content=allServices[i]?.rawContent();
+  const content = allServices[i]?.rawContent();
 
-  propServices.push(
-    {
-      title:title,
-      description:description,
-      content:content
-    }
-  )
+  propServices.push({
+    title: title,
+    description: description,
+    content: content,
+  });
 }
 ---
 
 <Base head={{ title, description }}>
-  <div class="grid md:grid-cols-2 mt-10 sm:grid-cols-1 md:pr-32">
-    <Profile/>
-    <Services list={propServices}/>
+  <div class='grid md:grid-cols-2 sm:grid-cols-1 md:pr-32 min-h-screen content-center'>
+    <Profile />
+    <Services list={propServices} />
   </div>
 </Base>

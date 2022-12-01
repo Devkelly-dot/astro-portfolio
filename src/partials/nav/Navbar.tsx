@@ -3,19 +3,18 @@ import React, { useState } from 'react';
 import { NavItem } from './NavItem';
 
 const Navbar = () => {
-  const [visNav, setVisNav] = useState(false);
+  const [visNav, setVisNav] = useState(true);
   const [navClass, setNavClass] = useState({
-    leftHand:
-      'grid-cols-1 md:flex md:list-none md:flex-row md:gap-4 invisible md:visible h-0',
+    leftHand: 'grid-cols-1 md:flex md:list-none md:flex-row md:gap-4',
     rightHand:
-      'grid-cols-1 md:flex md:list-none md:flex-row md:gap-4 md:justify-self-end invisible md:visible h-0',
+      'grid-cols-1 md:flex md:list-none md:flex-row md:gap-4 md:justify-self-end',
   });
 
   function handleNav() {
     setVisNav(!visNav);
     if (!visNav) {
       setNavClass({
-        leftHand: 'grid-cols-1 md:flex md:list-none md:flex-row md:gap-4 ',
+        leftHand: 'grid-cols-1 md:flex md:list-none md:flex-row md:gap-4',
         rightHand:
           'grid-cols-1 md:flex md:list-none md:flex-row md:gap-4 md:justify-self-end',
       });
@@ -53,10 +52,12 @@ const Navbar = () => {
           ></path>
         </svg>
       </button>
-      <div className=" grid h-20 grid-cols-1 p-4 opacity-60 hover:bg-slate-100 hover:opacity-100  md:h-14 md:grid-cols-2 md:px-10">
+      <div className=" grid grid-cols-1 p-4 opacity-60 hover:bg-slate-100  hover:opacity-100 md:h-14 md:grid-cols-2 md:px-10">
         <ul className={navClass.leftHand}>
           <NavItem name="Home" href="/" target="" />
           <NavItem name="About" href="/about" target="" />
+          <NavItem name="Projects" href="/projects" target="" />
+          <NavItem name="Resume" href="/resume" target="" />
         </ul>
         <ul className={navClass.rightHand}>
           <NavItem

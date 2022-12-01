@@ -1,0 +1,14 @@
+---
+import { MyProjectList } from '@/partials/projects/ProjectList';
+import Base from '@/templates/Base.astro';
+
+const { title } = { title: 'Projects' };
+const { description } = { description: 'Projects that I have worked on' };
+
+---
+<Base head={{ title, description }}>
+  <div class='px-2 md:px-20 pb-2 md:pb-20'>
+    <h1 class='text-3xl font-bold text-center mb-4'>My Projects</h1>
+    <MyProjectList />
+  </div>
+</Base>

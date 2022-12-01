@@ -32,6 +32,18 @@ const TechList = () => (
       img_url="https://res.cloudinary.com/dq1ktd5ge/image/upload/v1669794891/icons/strapi_nzjxzv.png"
       name="Strapi"
     />
+    <TechItem
+      img_url="https://res.cloudinary.com/dq1ktd5ge/image/upload/v1669879283/icons/html_5_i4vqnt.png"
+      name="HTML"
+    />
+    <TechItem
+      img_url="https://res.cloudinary.com/dq1ktd5ge/image/upload/v1669879283/icons/css_cmwfcu.png"
+      name="CSS"
+    />
+    <TechItem
+      img_url="https://res.cloudinary.com/dq1ktd5ge/image/upload/v1669879283/icons/git_lwpogc.png"
+      name="Git"
+    />
   </div>
 );
 

@@ -1,6 +1,5 @@
 ---
 import { Hero } from '@/partials/Hero';
-import { ProjectList } from '@/partials/ProjectList';
 import Base from '@/templates/Base.astro';
 import { AppConfig } from '@/utils/AppConfig';
 
@@ -9,6 +8,7 @@ const { description } = AppConfig;
 ---
 
 <Base head={{ title, description }}>
-  <Hero />
-  <ProjectList />
+    <div class='min-h-screen grid content-center'>
+      <Hero />
+    </div>
 </Base>
