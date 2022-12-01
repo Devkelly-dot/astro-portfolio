@@ -20,8 +20,8 @@ const Profile = () => (
       >
         <p style={{ width: '60%' }} className="mb-4">
           Hi, I'm Devin Kelly. I'm a freelance web developer and content writer.
-          I've worked remotedly (Midwest USA) for the last 5 years and have
-          loved every minute of it.
+          I've worked remotely (Midwest USA) for the last 5 years and have loved
+          every minute of it.
         </p>
         <p style={{ width: '50%' }}>
           My favorite technologies are{' '}
