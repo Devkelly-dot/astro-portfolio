@@ -1,4 +1,5 @@
 import { React } from 'react';
+import ReactTypingEffect from 'react-typing-effect';
 
 const Hero = () => (
   <div className="grid grid-cols-1 justify-items-center text-center">
@@ -9,8 +10,18 @@ const Hero = () => (
     <h1 className="mb-4 text-4xl font-bold text-black">
       Hello, World - I'm Devin Kelly
     </h1>
-    <h2 className="text-xl font-medium text-black">
-      Full-Stack Web Developer & Content Writer
+    <h2 className="mb-2 text-3xl font-medium">
+      <ReactTypingEffect
+        text={[
+          'Full-Stack Web Developer',
+          'Software Engineer',
+          'SEO Driven Content Writer',
+        ]}
+        speed={100}
+        eraseSpeed={50}
+        eraseDelay={2000}
+        typingDelay={100}
+      />
     </h2>
     <h3 className="mb-4 text-lg text-black">ReactJS | NextJS | Django</h3>
     <a
