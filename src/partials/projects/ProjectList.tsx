@@ -5,6 +5,25 @@ import { MyProjectItem } from './ProjectItem';
 const MyProjectList = () => (
   <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
     <MyProjectItem
+      name="NextJS Jamstack Boilerplate"
+      desc="A NextJS website that pulls its content from a CMS. I made this boilerplate so that I can easily modify it and turn it into anything from a landing page to a Blog to an E-Commerce store."
+      demo="https://nextjs-boiler.vercel.app/"
+      git="https://github.com/ReOcelot/nextjs-boiler"
+      tags={[
+        'Next.JS',
+        'React',
+        'Django',
+        'Python',
+        'REST API',
+        'Tailwind CSS',
+        'Heroku',
+        'Vercel',
+        'PostgreSQL',
+        'Headless CMS',
+      ]}
+    />
+
+    <MyProjectItem
       name="CheckinManga"
       desc="Full stack collection-management site with complete user sign-up and authentification. Also has a headless CMS attatched using Python's (Django) Wagtail. I made this software to help me manage my own collection and hopefully help many other collectors manage theirs."
       demo="https://www.checkinmanga.com/"
