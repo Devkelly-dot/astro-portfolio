@@ -5,13 +5,13 @@ import { MyProjectItem } from './ProjectItem';
 const MyProjectList = () => (
   <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
     <MyProjectItem
-      name="NextJS Jamstack Boilerplate"
-      desc="A NextJS website that pulls its content from a CMS. I made this boilerplate so that I can easily modify it and turn it into anything from a landing page to a Blog to an E-Commerce store."
-      demo="https://nextjs-boiler.vercel.app/"
-      git="https://github.com/ReOcelot/nextjs-boiler"
+      name="NoteFitness"
+      desc="Login with username: 'test' / password: 'test' or register for an account. A fitness tracking app for users to track their lifts, calories, and cardio during a workout. I made this app because most fitness apps that I've used were over-complicated, so I wanted something simple and easy to use. Built with a Dashboard template."
+      demo="https://note-fitness.vercel.app/dashboard/home"
+      git="https://github.com/ReOcelot/simplefit-v2"
       tags={[
-        'Next.JS',
         'React',
+        'Typescript',
         'Django',
         'Python',
         'REST API',
@@ -19,7 +19,6 @@ const MyProjectList = () => (
         'Heroku',
         'Vercel',
         'PostgreSQL',
-        'Headless CMS',
       ]}
     />
 
@@ -42,18 +41,18 @@ const MyProjectList = () => (
     />
 
     <MyProjectItem
-      name="NoteFitness"
-      desc="A fitness tracking app for users to track their lifts, calories, and cardio during a workout. I made this app because most fitness apps that I've used were over-complicated, so I wanted something simple and easy to use."
-      demo="https://notefitness.herokuapp.com/"
-      git="https://github.com/ReOcelot/simplefit_frontend"
+      name="RESTful Fitness API"
+      desc="An early version of the NoteFitness API"
+      demo=""
+      git="https://github.com/ReOcelot/simplefit_api_github"
       tags={[
-        'React',
-        'Django',
         'Python',
-        'REST API',
-        'Bootstrap',
-        'Heroku',
-        'PostgreSQL',
+        'Django',
+        'REST',
+        'API',
+        'Documentation',
+        'Git',
+        'Design Patterns',
       ]}
     />
 
@@ -63,14 +62,6 @@ const MyProjectList = () => (
       demo="https://www.devtheweb.dev/"
       git="https://github.com/ReOcelot/astro-portfolio"
       tags={['React', 'Astro.JS', 'Tailwind CSS', 'Netlify']}
-    />
-
-    <MyProjectItem
-      name="RESTful Fitness API"
-      desc="An early version of the Django REST API that I built for Note Fitness. I'm including this in my projects because of its documentation and the architecture of the API - I learned a lot about structuring my code in a modular way using base classes and API Views"
-      demo=""
-      git="https://github.com/ReOcelot/simplefit_api_github"
-      tags={['Python', 'Django', 'REST', 'API', 'Documentation', 'Git']}
     />
   </div>
 );
