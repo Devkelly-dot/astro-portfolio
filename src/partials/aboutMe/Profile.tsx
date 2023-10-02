@@ -4,7 +4,7 @@ const Profile = () => (
   <div>
     <img
       className="mx-auto mb-4 w-64 saturate-50"
-      src="https://res.cloudinary.com/dq1ktd5ge/image/upload/v1669765799/portfolio/headshot_1_n3osrc.png"
+      src="https://i.ibb.co/T0r9Q59/Untitled-1.png"
       alt="Devin's Picture"
     ></img>
     <div className="flex-col content-center justify-items-center text-center">
